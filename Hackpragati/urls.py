@@ -20,4 +20,5 @@ import re
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'', include('pragati.urls')),
+    path(r'review', include('review.urls')),
 ]
