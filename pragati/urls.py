@@ -3,4 +3,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name = 'index'),
+    url(r'^about/$', views.about, name = 'about pragati'),
+    url(r'^app_download/$', views.landing, name = 'App intro'),
 ]

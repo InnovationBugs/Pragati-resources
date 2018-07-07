@@ -5,12 +5,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="{% static 'images/fav_icon.png' %}" rel="shortcut icon">
+    <link href="static/images/fav_icon.png" rel="shortcut icon">
     <title>Pragati - Serve the needy</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="static/css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/font-awesome-4.7.0/css/font-awesome.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="{% static 'css/materialize.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="{% static 'css/custom_css.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -30,6 +30,10 @@
             height: 100%;
             margin: 0;
         }
+        .margin-fix {
+          margin-bottom: -20px;
+        }
+
     </style>
 
 </head>
@@ -56,7 +60,7 @@
         </div>
     </nav>
 
-    <div class="row parallax-window pad pad-down" data-parallax="scroll" data-image-src="static/images/44261.jpg">
+    <div class="row parallax-window pad pad-down" data-parallax="scroll" data-image-src="{% static 'images/44261.jpg' %}">
         <div class="col-md-12 col-sm-12 text-center">
             <h1 class="head-banner-text light-green-text text-accent-3 small-pad">Pragati | A needy's new hope</h1>
             <h5 class="col s12 light banner-text text-white">Pragati is an initiative to facilitate NGOs serve the needy effectively and efficiently. <br /> Now, use your phone to order food for the needy with no cost.<br /> So, why wait to do this wonderful deed !
@@ -67,3 +71,137 @@
         </div>
         <br><br>
     </div>
+
+
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row small-pad">
+                <div class="col s12 m12">
+                    <h1 class="head-banner-text text-center"><i class="fa fa fa-heart fa-pad" style="color: red;"></i>How do we care ? </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">Speeds up Supply Chain</h5>
+
+                        <p class="light">We absorb the extra food from the kitchens, hotels and canteens at very less time, with all care taken. We bring them for quality testing and within minutes supply them to the needy in the close vicinity. We have also optimised
+                            NGOs by supplying them food at blazing fast rate while maintaining the food's hygiene.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">User Experience Focused</h5>
+
+                        <p class="light">We value our volunteers and end users who form a crucial part of this mission. We understand what hunger means. Thus, we make every attempt to reach your location within 25 minutes of order. We do have some emotional surprises
+                            for our donors.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">Workflow Strategy</h5>
+
+                        <p class="light">Thank you for your interest in knowing our workflow. In short, you can assume, we are trying to put together he blazing speed of internet and its reachability to cater hunger prone segment by bridging them with economically stable
+                            segment of our society.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row parallax-window pad pad-down" data-parallax="scroll" data-image-src="{% static 'images/1375.jpg' %}">
+        <div class="col-m-12 col-sm-12 pad text-center pad-down">
+            <h5 class="head-banner-text col s12 light-green-text text-accent-3">Had a party at home, today ? Give us a missed call or fill a form <a style="color: #6cef26;" href="#">here</a> !</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 text-center">
+            <h5 class="head-banner-text small-pad">Contact Us</h5>
+        </div>
+        <div class="col-md-6 col-sm-6 text-center pad-extra">
+            <h2 class="banner-text">Give us a missed call on 088888 88888 and we will call you</h2>
+            <video width="300" height="200" id="1127" autoplay loop muted>
+        <source src="{% static 'images/1127.mp4' %}" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+        </div>
+        <div class="col-md-6 col-sm-6 text-center borderify-login">
+            <form class="col s10">
+                <p class="text-center">Please fill this <b>Volunteer's form.</b></p>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="first_name" type="text" class="validate" placeholder="First name">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">person</i>
+                    <input id="last_name" type="text" class="validate" placeholder="Last name">
+                    <label for="last_name">Last Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate" placeholder="E mail">
+                    <label for="email">E mail</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">dialpad</i>
+                    <input id="servings" type="number" class="validate" placeholder="How many servings can you donate ?">
+                    <label for="servings">Servings</label>
+                </div>
+                <a href="submit.html" id="download-button" class="btn-large waves-effect waves-light amber darken-3">Submit</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="row parallax-window pad margin-fix" data-parallax="scroll" data-image-src="static/images/1920.jpg">
+        <div class="col-md-12 col-sm-12 text-center pad-down">
+            <h1 class="head-banner-text pad-extra white-text">Together, we can make a difference !</h1>
+        </div>
+    </div>
+
+    <footer class="row purple pad-down lighten-1 margin-fix">
+        <div class="row pad margin-fix">
+            <div class="col l6 s12">
+                <h5 class="white-text text-center">Company Bio</h5>
+                <p class="grey-text text-lighten-4 text-center">
+                    Pragati is a progressive team of individuals constantly striving to bring together different classes of society and empathize with each other. Pragati believes that the Mother Earth has ample for everybody if there is sustainable and rational distribution
+                    of resources in the society. Call 88888 88888 (Toll Free) to know more.
+                </p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text text-center">Connect</h5>
+                <ul class="text-center">
+                    <li>
+                        <a class="white-text" href="/">Home</a>
+                    </li>
+                    <li><a class="white-text" href="../about">About Us</a></li>
+                    <li><a class="white-text" href="/contact.html">Contact Us</a></li>
+                    <li><a class="white-text" href="../app_download">Get Started Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="{% static 'js/parallax.min.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
+</body>
+
+</html>

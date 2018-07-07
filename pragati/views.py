@@ -5,3 +5,11 @@ from django.shortcuts import render
 
 def index(request):
     return render(request,'webpages/index.html')
+
+def about(request):
+    return render(request, 'webpages/about.html')
+
+def landing(request):
+    return render(request, 'webpages/landing.html')
+
+    
