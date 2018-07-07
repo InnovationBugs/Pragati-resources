@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import feedback
+from datetime import date
 # Create your views here.
 
 
@@ -23,7 +24,9 @@ def feedback(request):
             msg_data = feedback(email = email,
                                 name = name,
                                 subject = subject,
-                                message = message
+                                message = message,
+                                msg_id = 0,
+                                date = date.today(),
                                 )
 
             msg_data.save()
