@@ -41,9 +41,24 @@
           margin: -20px;
         }
 
+        .back-lite-rt {
+          width: 60%;
+          background: #0e3168;
+          right: 2%;
+          float: right;
+          transform: skewX(18deg);
+          overflow: hidden;
+          margin: -50px;
+        }
+
         .anti-transform {
           transform: skewX(18deg);
           padding-right: 100px;
+        }
+
+        .anti-transform-rt {
+          transform: skewX(-18deg);
+          padding-left: 100px;
         }
 
 
@@ -100,9 +115,29 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
-        <img src="{% static 'images/2235.png' %}" style="width: 50%; height: 100%; right: -10%;"/>
+        <img src="{% static 'images/2236.png' %}" style="width: 50%; height: 100%; right: -10%;"/>
       </div>
     </div>
+    <div class="row pad-down">
+      <div class="col-md-4 col-sm-6">
+        <img src="{% static 'images/2236.png' %}" style="width: 50%; height: 100%; right: -10%;"/>
+      </div>
+      <div class="col-md-8 col-sm-6 back-lite-rt pad-down text-center">
+        <div class="row text-center padmini anti-transform-rt">
+          <h5 class="col light head-banner-text amber-text">
+            Why love Pragati ?
+          </h5><br /><br />
+          <h5 class="col light text-white">
+            Pragati is an intuitive app that unites our richer and poor class of society together.
+            It is an application aimed to erradicate food crisis in society and in general, throughout
+            the country by bringing closer the richer class to empathize with the poor and thereby
+            donating additional food to the needy to make their day great.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="{% static 'js/materialize.min.js' %}"></script>
