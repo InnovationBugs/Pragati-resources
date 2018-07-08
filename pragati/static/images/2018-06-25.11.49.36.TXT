@@ -1,6 +1,0 @@
-BEGIN:VNOTE
-VERSION:1.1
-BODY;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:Dear User,  Based on the skill gap identified in ECBS, you have been assigned an e-learning program on TQM. The course needs to be completed latest by 31st October 2018.  The module can be accessed at : http://144.0.1.42:8060/login2.aspx  (to be opened in Internet Explorer or Google Chrome) using your AD/ID username (i.e. P.No.) and password. In case you dont have AD/ID details, please contact IT Helpdesk. For any query or assistance required, you may contact us at 18002588100 or mail us at elea
-DCREATED:20180625T114936
-LAST-MODIFIED:20180625T114936
-END:VNOTE
