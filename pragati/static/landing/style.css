@@ -1,31 +1,3 @@
-/*-----------------------------------------------------------------------------------
-Template Name: New HTML5 Template,
-Template URI: http://www.themectg.com
-Description: This is html5 template
-Author: Themectg
-Author URI: http://www.themectg.com
-Version: 1.0
------------------------------------------------------------------------------------
-CSS INDEX
-===================
-1. Google font
-2. Theme Default CSS
-3. Helper-class
-4. Button-style
-5. Mainmenu-area
-6. Section-Background
-7. Header-style
-8. Headline-style
-9. Skills-area
-10. Service-area
-11. Work-area
-12. Team-area
-13. Bar-effect-css
-14. Masp style
-15. Form-style
-16. Scroll-To-Top-Button
-17. Preloader-css
------------------------------------------------------------------------------------*/
 
 /*-----------------
 1. Google font
@@ -399,7 +371,7 @@ input:-webkit-autofill:focus {
 }
 
 .screen-slider .item {
-    background: url('images/mobile2.png') no-repeat scroll center center / auto 100%;
+    background: url('../images/mobile2.png') no-repeat scroll center center / auto 100%;
     padding: 56px 22px;
     display: inline-block;
     margin: auto;
